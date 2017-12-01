@@ -7,6 +7,8 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import static org.codehaus.groovy.runtime.DefaultGroovyMethods.size;
+
 
 @RestController
 public class Controller {
@@ -20,7 +22,7 @@ public class Controller {
     }
 
     public int randomId() {
-        int id = ThreadLocalRandom.current().nextInt(1,8);
+        int id = ThreadLocalRandom.current().nextInt(1,size(repo.findAll()));
         return id;
     }
 }
