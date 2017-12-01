@@ -26,8 +26,7 @@ public class SecretApplication implements CommandLineRunner {
 		repo.save(new Quote("Check the documentation!!"));
 		repo.save(new Quote("You are powerful gods!"));
 		repo.save(new Quote("You are powerful gods, you can do anything!"));
-		repo.save(new Quote(""));
-
+		repo.save(new Quote("It's very easy!"));
 
 	}
 }

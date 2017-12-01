@@ -3,6 +3,7 @@ package com.greenfox.secret.controller;
 
 import com.greenfox.secret.model.Quote;
 import com.greenfox.secret.repository.QuoteRepository;
+import java.util.concurrent.ThreadLocalRandom;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,8 +16,11 @@ public class Controller {
 
     @GetMapping(value = "/api/random")
     public Quote getRandomquote() {
-        
+        return repo.findOne(randomId());
+    }
 
-        return repo.findOne();
+    public int randomId() {
+        int id = ThreadLocalRandom.current().nextInt(0,7);
+        return id;
     }
 }
