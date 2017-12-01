@@ -19,14 +19,14 @@ public class SecretApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		repo.save(new Quote("Awesome!"));
+		/*repo.save(new Quote("Awesome!"));
 		repo.save(new Quote("Just how awesome it can be!"));
 		repo.save(new Quote("How cool is that!"));
 		repo.save(new Quote("Cool!"));
 		repo.save(new Quote("Check the documentation!!"));
 		repo.save(new Quote("You are powerful gods!"));
 		repo.save(new Quote("You are powerful gods, you can do anything!"));
-		repo.save(new Quote("It's very easy!"));
+		repo.save(new Quote("It's very easy!"));*/
 
 	}
 }
