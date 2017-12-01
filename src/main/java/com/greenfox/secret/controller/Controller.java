@@ -22,7 +22,7 @@ public class Controller {
     }
 
     public int randomId() {
-        int id = ThreadLocalRandom.current().nextInt(1,size(repo.findAll()));
+        int id = ThreadLocalRandom.current().nextInt(1, (int) repo.count() + 1);
         return id;
     }
 }
