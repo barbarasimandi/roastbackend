@@ -20,7 +20,7 @@ public class Controller {
     }
 
     public int randomId() {
-        int id = ThreadLocalRandom.current().nextInt(0,7);
+        int id = ThreadLocalRandom.current().nextInt(1,8);
         return id;
     }
 }
